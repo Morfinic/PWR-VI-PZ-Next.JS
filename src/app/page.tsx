@@ -1,6 +1,40 @@
+import { createCategory } from "@/lib/mongodb/calls/category.calls";
+import { createProduct, getAllProducts, getProductById } from "@/lib/mongodb/calls/product.calls";
 import Image from "next/image";
 
 export default function Home() {
+  // createCategory({
+  //   name: "2", attrs: ["1", "2", "3"]
+  // }).then(
+  //   data => {
+  //     console.log(data)
+  // })
+
+  // createProduct({
+  //   product: {
+  //     name: "q",
+  //     description: "w",
+  //     imageUrl: "testURL",
+  //     price: 9.99,
+  //     categoryId: "664a348a7415b9317cf94857"
+  //   }
+  // });
+
+  // getProductById("664a35137415b9317cf9485a").then(
+  //   data => {
+  //     console.log(data);
+  //   }
+  // )
+
+  // getAllProducts({
+  //   name: "",
+  //   category: "1",
+  //   limit: 2
+  // }).then(
+  //   data => {
+  //     console.log(data)
+  // })
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
